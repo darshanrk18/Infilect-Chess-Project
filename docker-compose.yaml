@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  api:
+    image: "chess_api:1.0"
+    build:
+      context: ./chess_api
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+    container_name: "chess-api"
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+    container_name: "chess-redis-cache"

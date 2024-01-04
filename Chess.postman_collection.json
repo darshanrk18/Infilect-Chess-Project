@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "cfaa8b21-0281-44b2-94db-20cb25f7195c",
+		"name": "Chess",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21332709"
+	},
+	"item": [
+		{
+			"name": "Knight",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "positions",
+						"value": "{\"Queen\": \"E7\", \"Bishop\": \"B7\", \"Rook\":\"G5\", \"Knight\": \"C3\"}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"positions\": {\r\n        \"Queen\": \"E7\",\r\n        \"Bishop\": \"B7\",\r\n        \"Rook\": \"G5\",\r\n        \"Knight\": \"C3\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chess/knight",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chess",
+						"knight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Queen",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "positions",
+						"value": "{\"Queen\": \"E7\", \"Bishop\": \"B7\", \"Rook\":\"G5\", \"Knight\": \"C3\"}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"positions\": {\r\n        \"Queen\": \"H1\",\r\n        \"Bishop\": \"B7\",\r\n        \"Rook\": \"H8\",\r\n        \"Knight\": \"F2\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chess/queen",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chess",
+						"queen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "positions",
+						"value": "{\"Queen\": \"E7\", \"Bishop\": \"B7\", \"Rook\":\"G5\", \"Knight\": \"C3\"}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"positions\": {\r\n        \"Queen\": \"A5\",\r\n        \"Bishop\": \"G8\",\r\n        \"Rook\": \"H5\",\r\n        \"Knight\": \"G4\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chess/rook",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chess",
+						"rook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
